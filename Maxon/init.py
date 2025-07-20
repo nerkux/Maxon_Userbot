@@ -64,7 +64,7 @@ async def packet_callback(client: MaxClient, packet: dict):
     handler = command_handlers.get(command)
 
     if handler:
-        text = await handler(packet, args)
+        text = await handler(packet, args, client)
         await edit_message(
             client,
             packet["payload"]["chatId"],
