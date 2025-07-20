@@ -6,7 +6,7 @@ __description__ = "Возвращает случайное число из за�
 __version__ = "1.0.0"
 __author__ = "@RATcraftGames"
 
-async def handle(packet, args):
+async def handle(packet, args, client):
     if len(args) != 2:
         return "Использование: .random [начальное число] [конечное число]"
     try:
