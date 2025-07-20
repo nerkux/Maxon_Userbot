@@ -40,7 +40,7 @@ patriotic_calls = [
     "Гойда, пусть каждый миг нашей жизни наполнится любовью к родине и стремлением сделать её ещё прекраснее!"
 ]
 
-async def handle(packet, args):
+async def handle(packet, args, client):
     return choice(patriotic_calls)
 
 def register(handlers):
