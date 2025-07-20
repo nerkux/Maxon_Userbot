@@ -8,7 +8,7 @@ __description__ = "Выполняет Python код, переданный в а�
 __version__ = "1.2"
 __author__ = "@nerkux"
 
-async def handle(packet, args):
+async def handle(packet, args, client):
     if isinstance(args, (list, tuple)):
         code = "\n".join(args).strip()
     else:
