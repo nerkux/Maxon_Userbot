@@ -56,7 +56,7 @@ def list_rekv():
     return "\n\n".join(lines)
 
 
-async def handle(packet, args):
+async def handle(packet, args, client):
 
     if args == []:
         data = load_data()
