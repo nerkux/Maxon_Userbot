@@ -9,7 +9,7 @@ __author__ = "@nerkux"
 
 MODULES_DIR = Path(__file__).parent / "modules"
 
-async def handle(packet, args):
+async def handle(packet, args, client):
     modules_path = Path(__file__).parent
     lines = []
     for py_file in modules_path.glob("*.py"):
