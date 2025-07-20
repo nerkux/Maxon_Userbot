@@ -7,7 +7,7 @@ __description__ = "Pickme messages <3"
 __version__ = "1.0.0"
 __author__ = "@nerkux"
 
-async def handle(packet, args):
+async def handle(packet, args, client):
 
     emojis = ["✨", "❤️‍🔥", "🔥", "🎀", "🍓", "🌺"]
 
